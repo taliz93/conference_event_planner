@@ -80,7 +80,7 @@ const ConferenceEvent = () => {
 
     const ItemsDisplay = ({ items }) => {
       console.log(items);
-      return
+      return (
         <>
           <div className="display_box1">
             {items.length === 0 && <p>No items selected</p>}
@@ -114,6 +114,7 @@ const ConferenceEvent = () => {
             </table>
           </div>
         </>
+      )
     };
 
     const calculateTotalCost = (section) => {
